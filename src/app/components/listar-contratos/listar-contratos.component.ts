@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ContratoService } from '../../services/contrato.service';
 import { contrato } from '../../models/contrato';
+import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-listar-contratos',
   templateUrl: './listar-contratos.component.html',

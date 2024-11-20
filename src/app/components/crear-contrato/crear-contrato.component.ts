@@ -2,6 +2,7 @@
 import { Component } from '@angular/core';
 import { ContratoService } from '../../services/contrato.service';
 import { contrato } from '../../models/contrato';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-crear-contrato',
