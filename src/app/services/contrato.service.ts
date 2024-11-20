@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Contrato } from '../models/contrato';
+import { contrato } from '../models/contrato';
 
 @Injectable({
   providedIn: 'root',
@@ -11,20 +11,20 @@ export class ContratoService {
 
   constructor(private http: HttpClient) {}
 
-  getContratos(): Observable<Contrato[]> {
-    return this.http.get<Contrato[]>(this.baseUrl);
+  getContratos(): Observable<contrato[]> {
+    return this.http.get<contrato[]>(this.baseUrl);
   }
 
-  getContratoById(id: number): Observable<Contrato> {
-    return this.http.get<Contrato>(`${this.baseUrl}/${id}`);
+  getContratoById(id: number): Observable<contrato> {
+    return this.http.get<contrato>(`${this.baseUrl}/${id}`);
   }
 
-  createContrato(contrato: Contrato): Observable<Contrato> {
-    return this.http.post<Contrato>(this.baseUrl, contrato);
+  createContrato(contrato: contrato): Observable<contrato> {
+    return this.http.post<contrato>(this.baseUrl, contrato);
   }
 
-  updateContrato(id: number, contrato: Contrato): Observable<Contrato> {
-    return this.http.put<Contrato>(`${this.baseUrl}/${id}`, contrato);
+  updateContrato(id: number, contrato: contrato): Observable<contrato> {
+    return this.http.put<contrato>(`${this.baseUrl}/${id}`, contrato);
   }
 
   deleteContrato(id: number): Observable<void> {

@@ -1,7 +1,7 @@
 
 import { Component } from '@angular/core';
 import { ContratoService } from '../../services/contrato.service';
-import { Contrato } from '../../models/contrato';
+import { contrato } from '../../models/contrato';
 
 @Component({
   selector: 'app-crear-contrato',
@@ -9,7 +9,7 @@ import { Contrato } from '../../models/contrato';
   styleUrls: ['./crear-contrato.component.css'],
 })
 export class CrearContratoComponent {
-  contrato: Contrato = {
+  contrato: contrato = {
     identificador: '',
     valor: 0,
     nombreContratante: '',
