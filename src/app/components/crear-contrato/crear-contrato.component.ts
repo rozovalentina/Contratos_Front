@@ -1,6 +1,7 @@
+
 import { Component } from '@angular/core';
-import { ContratoService } from 'src/app/services/contrato.service';
-import { Contrato } from 'src/app/models/contrato.model';
+import { ContratoService } from '../../services/contrato.service';
+import { Contrato } from '../../models/contrato';
 
 @Component({
   selector: 'app-crear-contrato',
@@ -17,6 +18,7 @@ export class CrearContratoComponent {
     documentoContratantista: '',
     fechaInicial: '',
     fechaFinal: '',
+    id: 0
   };
 
   constructor(private contratoService: ContratoService) {}
