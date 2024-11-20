@@ -1,0 +1,28 @@
+<h2>Crear Contrato</h2>
+<form (ngSubmit)="guardarContrato()">
+  <label>Identificador:</label>
+  <input [(ngModel)]="contrato.identificador" name="identificador" required />
+  
+  <label>Valor:</label>
+  <input [(ngModel)]="contrato.valor" name="valor" type="number" required />
+  
+  <label>Nombre Contratante:</label>
+  <input [(ngModel)]="contrato.nombreContratante" name="nombreContratante" required />
+  
+  <label>Documento Contratante:</label>
+  <input [(ngModel)]="contrato.documentoContratante" name="documentoContratante" required />
+  
+  <label>Nombre Contratantista:</label>
+  <input [(ngModel)]="contrato.nombreContratantista" name="nombreContratantista" required />
+  
+  <label>Documento Contratantista:</label>
+  <input [(ngModel)]="contrato.documentoContratantista" name="documentoContratantista" required />
+  
+  <label>Fecha Inicial:</label>
+  <input [(ngModel)]="contrato.fechaInicial" name="fechaInicial" type="date" required />
+  
+  <label>Fecha Final:</label>
+  <input [(ngModel)]="contrato.fechaFinal" name="fechaFinal" type="date" required />
+  
+  <button type="submit">Guardar</button>
+</form>
